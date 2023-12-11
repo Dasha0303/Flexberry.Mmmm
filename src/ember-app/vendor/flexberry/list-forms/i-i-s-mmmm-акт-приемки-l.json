@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-mmmm-акт-приемки-e",
+  "editForm": "i-i-s-mmmm-акт-приемки-e",
+  "external": false,
+  "caption": "Акт приемки",
+  "name": "IISMmmmАктПриемкиL",
+  "className": "АктПриемкиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-mmmm-акт-приемки",
+      "modelProjection": "АктПриемкиL"
+    }
+  ]
+}

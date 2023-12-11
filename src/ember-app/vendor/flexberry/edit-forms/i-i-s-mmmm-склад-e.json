@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТЧАктаПриемки",
+      "projection": "ТЧАктаПриемкиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Склад",
+  "name": "IISMmmmСкладE",
+  "className": "СкладE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-mmmm-склад",
+      "modelProjection": "СкладE"
+    }
+  ]
+}

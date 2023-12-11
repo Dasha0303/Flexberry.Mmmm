@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISMmmmСотрудникиE",
+  "className": "СотрудникиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-mmmm-сотрудники",
+      "modelProjection": "СотрудникиE"
+    }
+  ]
+}

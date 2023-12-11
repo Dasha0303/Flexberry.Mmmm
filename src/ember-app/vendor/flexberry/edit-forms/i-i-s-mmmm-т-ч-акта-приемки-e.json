@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "АктПриемки",
+      "projection": "АктПриемкиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Т ч акта приемки",
+  "name": "IISMmmmТЧАктаПриемкиE",
+  "className": "ТЧАктаПриемкиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-mmmm-т-ч-акта-приемки",
+      "modelProjection": "ТЧАктаПриемкиE"
+    }
+  ]
+}

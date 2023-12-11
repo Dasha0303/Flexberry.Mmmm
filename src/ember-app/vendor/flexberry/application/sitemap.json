@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Mmmm",
+  "applicationTitle": "Mmmm",
+  "items": [
+    {
+      "link": null,
+      "menuName": "mmmm",
+      "caption": "Mmmm",
+      "title": "Mmmm",
+      "children": [
+        {
+          "link": "i-i-s-mmmm-склад-l",
+          "menuName": null,
+          "caption": "Склад",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-mmmm-т-н-l",
+          "menuName": null,
+          "caption": "ТН",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-mmmm-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-mmmm-акт-приемки-l",
+          "menuName": null,
+          "caption": "Акт приемки",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-mmmm-т-ч-акта-приемки-l",
+          "menuName": null,
+          "caption": "Т ч акта приемки",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

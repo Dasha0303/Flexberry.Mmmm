@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-mmmm-склад-e",
+  "editForm": "i-i-s-mmmm-склад-e",
+  "external": false,
+  "caption": "Склад",
+  "name": "IISMmmmСкладL",
+  "className": "СкладL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-mmmm-склад",
+      "modelProjection": "СкладL"
+    }
+  ]
+}

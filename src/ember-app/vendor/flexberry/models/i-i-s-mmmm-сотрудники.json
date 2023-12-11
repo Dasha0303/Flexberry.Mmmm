@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISMmmmСотрудники",
+  "modelName": "i-i-s-mmmm-сотрудники",
+  "className": "Сотрудники",
+  "nameSpace": "IIS.Mmmm",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "должность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "табель",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникиE",
+      "modelName": "i-i-s-mmmm-сотрудники",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "табель",
+          "caption": "Табель",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникиL",
+      "modelName": "i-i-s-mmmm-сотрудники",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "табель",
+          "caption": "Табель",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

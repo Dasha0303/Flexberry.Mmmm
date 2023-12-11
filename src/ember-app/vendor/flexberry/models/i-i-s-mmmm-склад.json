@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISMmmmСклад",
+  "modelName": "i-i-s-mmmm-склад",
+  "className": "Склад",
+  "nameSpace": "IIS.Mmmm",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "имяСклада",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодСклада",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧАктаПриемки",
+      "relatedTo": "i-i-s-mmmm-т-ч-акта-приемки",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СкладE",
+      "modelName": "i-i-s-mmmm-склад",
+      "attrs": [
+        {
+          "name": "кодСклада",
+          "caption": "Код склада",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "имяСклада",
+          "caption": "Имя склада",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерПозиции",
+          "lookupValueField": "номерПозиции",
+          "relationName": "ТЧАктаПриемки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерПозиции",
+              "caption": "Номер позиции",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Т ч акта приемки",
+          "name": "тЧАктаПриемки",
+          "relatedTo": "i-i-s-mmmm-т-ч-акта-приемки",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СкладL",
+      "modelName": "i-i-s-mmmm-склад",
+      "attrs": [
+        {
+          "name": "кодСклада",
+          "caption": "Код склада",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "имяСклада",
+          "caption": "Имя склада",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧАктаПриемки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерПозиции",
+              "caption": "Номер позиции",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер позиции",
+          "name": "тЧАктаПриемки",
+          "relatedTo": "i-i-s-mmmm-т-ч-акта-приемки",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

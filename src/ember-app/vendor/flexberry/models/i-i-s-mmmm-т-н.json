@@ -1,0 +1,239 @@
+﻿{
+  "name": "IISMmmmТН",
+  "modelName": "i-i-s-mmmm-т-н",
+  "className": "ТН",
+  "nameSpace": "IIS.Mmmm",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колво",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "материал",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерТН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерТС",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "поставщик",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "актПриемки",
+      "relatedTo": "i-i-s-mmmm-акт-приемки",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧАктаПриемки",
+      "relatedTo": "i-i-s-mmmm-т-ч-акта-приемки",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТНE",
+      "modelName": "i-i-s-mmmm-т-н",
+      "attrs": [
+        {
+          "name": "номерТН",
+          "caption": "Номер ТН",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "поставщик",
+          "caption": "Поставщик",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "номерТС",
+          "caption": "Номер ТС",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "материал",
+          "caption": "Материал",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "колво",
+          "caption": "Колво",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ДатаПриемки",
+          "lookupValueField": "датаПриемки",
+          "relationName": "АктПриемки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаПриемки",
+              "caption": "Дата приемки",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Акт приемки",
+          "name": "актПриемки",
+          "relatedTo": "i-i-s-mmmm-акт-приемки",
+          "inverse": null
+        },
+        {
+          "lookupValue": "НомерПозиции",
+          "lookupValueField": "номерПозиции",
+          "relationName": "ТЧАктаПриемки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерПозиции",
+              "caption": "Номер позиции",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Т ч акта приемки",
+          "name": "тЧАктаПриемки",
+          "relatedTo": "i-i-s-mmmm-т-ч-акта-приемки",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТНL",
+      "modelName": "i-i-s-mmmm-т-н",
+      "attrs": [
+        {
+          "name": "номерТН",
+          "caption": "Номер ТН",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "поставщик",
+          "caption": "Поставщик",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "номерТС",
+          "caption": "Номер ТС",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "материал",
+          "caption": "Материал",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "колво",
+          "caption": "Колво",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "АктПриемки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаПриемки",
+              "caption": "Дата приемки",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата приемки",
+          "name": "актПриемки",
+          "relatedTo": "i-i-s-mmmm-акт-приемки",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧАктаПриемки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерПозиции",
+              "caption": "Номер позиции",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер позиции",
+          "name": "тЧАктаПриемки",
+          "relatedTo": "i-i-s-mmmm-т-ч-акта-приемки",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
